@@ -1,5 +1,10 @@
 {
   "name": "vueblog-vue",
+  "author": {
+	"name": "CqSwuWyc",
+	"email": "1458200660@qq.com",
+	"url": ""
+  }
   "version": "0.1.0",
   "private": true,
   "scripts": {
