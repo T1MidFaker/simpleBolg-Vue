@@ -1,13 +1,14 @@
 <template>
-  <div>
-
-    <el-container>
+ <div class="bg001" style="background: url(../images/wallhaven-dpvykm.jpg)">
+	 <div class="bg01">
+	
+    <el-container class="el-c">
       <el-header>
-        <img class="mlogo" src="https://www.markerhub.com/dist/images/logo/markerhub-logo.png" alt="">
+	     欢迎登录Hirohima的个人博客
       </el-header>
-      <el-main>
-        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-          <el-form-item label="用户名" prop="username">
+      <el-main class="e-m">
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm aaa">
+          <el-form-item label="用户名" prop="username" style="color: '#fff'">
             <el-input v-model="ruleForm.username"></el-input>
           </el-form-item>
           <el-form-item label="密码" prop="password">
@@ -24,6 +25,7 @@
     </el-container>
 
   </div>
+ </div>
 </template>
 
 <script>
@@ -32,8 +34,8 @@
     data() {
       return {
         ruleForm: {
-          username: 'markerhub',
-          password: '111111'
+          username: '',
+          password: ''
         },
         rules: {
           username: [
@@ -81,13 +83,26 @@
 </script>
 
 <style scoped>
-  .el-header, .el-footer {
+	.bg001{
+		background-color: '#FAEBD7'
+	}
+	body{
+		background-color: '#FAEBD7'
+	}
+.el-header, .el-footer {
     background-color: #B3C0D1;
     color: #333;
     text-align: center;
     line-height: 60px;
+	margin-top: 100px;
   }
-
+	.e-m{
+		
+		background: url(../images/wallhaven-dpvykm.jpg);
+		height: 320px;
+		align-text: center;
+		background-size: 100% 100%;
+	}
   .el-aside {
     background-color: #D3DCE6;
     color: #333;
@@ -97,7 +112,7 @@
 
   .el-main {
     /*background-color: #E9EEF3;*/
-    color: #333;
+    color: #fff;
     text-align: center;
     line-height: 160px;
   }
@@ -106,15 +121,9 @@
     margin-bottom: 40px;
   }
 
-  .el-container:nth-child(5) .el-aside,
-  .el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-  }
-
-  .el-container:nth-child(7) .el-aside {
-    line-height: 320px;
-  }
-
+	.el-form-item{
+		color: '#fff'
+	}
   .mlogo {
     height: 60%;
     margin-top: 10px;
@@ -122,7 +131,7 @@
 
   .demo-ruleForm {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
 </style>

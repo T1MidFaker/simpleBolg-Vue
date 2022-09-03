@@ -1,9 +1,9 @@
 {
   "name": "vueblog-vue",
   "author": {
-	"name": "CqSwuWyc",
-	"email": "1458200660@qq.com",
-	"url": ""
+    "name": "CqSwuWyc",
+    "email": "1458200660@qq.com",
+    "url": ""
   },
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.1",
+    "github-markdown-css": "^5.1.0",
     "markdown-it": "^11.0.0",
     "mavon-editor": "^2.9.0",
     "vue": "^2.6.11",
