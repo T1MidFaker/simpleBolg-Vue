@@ -1,14 +1,13 @@
 <template>
  <div class="bg001" style="background: url(../images/wallhaven-dpvykm.jpg)">
 	 <div class="bg01">
-	
     <el-container class="el-c">
-      <el-header>
+      <el-header class="u1">
 	     欢迎登录Hirohima的个人博客
       </el-header>
       <el-main class="e-m">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm aaa">
-          <el-form-item label="用户名" prop="username" style="color: '#fff'">
+          <el-form-item label="用户名" prop="username">
             <el-input v-model="ruleForm.username"></el-input>
           </el-form-item>
           <el-form-item label="密码" prop="password">
@@ -81,8 +80,30 @@
     }
   }
 </script>
-
+<style>
+	html{
+	height: 100%
+	}
+	body{
+		width:100%;
+		height:100%;
+		margin:0px;
+		padding:0px;
+		background: url(../images/wallhaven-3z7k6y.jpg);
+		background-size: 100% 100% ;
+		
+}
+	.u1{
+		color: #fff;
+		font-size: 20px
+	}
+	
+	
+</style>
 <style scoped>
+	.el-form-item__label{
+		color: #fff;
+	}
 	.bg001{
 		background-color: '#FAEBD7'
 	}
@@ -95,6 +116,7 @@
     text-align: center;
     line-height: 60px;
 	margin-top: 100px;
+	opacity: 0.6;
   }
 	.e-m{
 		
@@ -115,6 +137,7 @@
     color: #fff;
     text-align: center;
     line-height: 160px;
+	opacity: 0.9
   }
 
   body > .el-container {
@@ -122,7 +145,7 @@
   }
 
 	.el-form-item{
-		color: '#fff'
+		color: '#fff';
 	}
   .mlogo {
     height: 60%;
