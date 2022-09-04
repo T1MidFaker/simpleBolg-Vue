@@ -6,7 +6,7 @@
       <el-timeline>
 
         <el-timeline-item :timestamp="blog.created" placement="top" v-for="blog in blogs">
-          <el-card>
+          <el-card class="el-card01">
             <h4>
               <router-link :to="{name: 'BlogDetail', params: {blogId: blog.id}}">
                 {{blog.title}}
@@ -64,12 +64,38 @@
     }
   }
 </script>
+<style>
 
+	 .el-timeline-item__timestamp.is-top{
+		color: #fff;
+  }
+	.el-card01{
+		background: url(../images/bd740bcbbc06c8e71a4b9118684374f3.jpg);
+		background-size: cover;
+		opacity: 0.8
+	}
+	h4{
+		z-index: 4;
+	}
+	.img{
+		
+		z-index: 1
+	}
+</style>
 <style scoped>
 
   .mpage {
     margin: 0 auto;
     text-align: center;
   }
+  .el-timeline-item__timestamp.is-top{
+	color: #fff;
+  }
+  el-image{
+	z-index: -1;
+	background-size: cover;
+  }
+	.el-card__body{
 
+	}
 </style>
