@@ -1,13 +1,13 @@
 <template>
   <div class="m-content">
-    <h3>欢迎来到Hirohima的博客</h3>
+    <h3 style="color: rgb(114, 165, 229 )">欢迎来到Hirohima的博客</h3>
     <div class="block">
-      <el-avatar :size="50" :src="user.avatar"></el-avatar>
-      <div>{{ user.username }}</div>
+      <el-avatar :size="50" :src="require('@/images/17f5370e-5ecf-11ec-9cf9-0242ac110002.jpg')"></el-avatar>
+      <div style="color: rgb(187, 140, 226 )">{{ user.username }}</div>
     </div>
 
     <div class="maction">
-      <span><el-link href="/blogs">主页</el-link></span>
+      <span><el-link href="/blogs" style="color: white">主页</el-link></span>
       <el-divider direction="vertical"></el-divider>
       <span><el-link type="success" href="/blog/add">发表博客</el-link></span>
 
@@ -27,7 +27,7 @@
       return {
         user: {
           username: '请先登录',
-          avatar: '../images/17f5370e-5ecf-11ec-9cf9-0242ac110002.jpg'
+          avatar: ''
         },
         hasLogin: false
       }
