@@ -10,7 +10,7 @@
 
 登录页面：
 
-![image-20220904155432254](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220904155432254.png)
+![image-20220904155432254](https://raw.githubusercontent.com/T1MidFaker/simpleBolg-Vue/main/demo-pics/image-20220904155317120.png)
 
 登录后展示页：
 
