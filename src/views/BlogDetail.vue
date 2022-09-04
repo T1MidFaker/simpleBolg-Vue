@@ -5,7 +5,7 @@
     <div class="mblog">
       <h2> {{ blog.title }}</h2>
       <el-link icon="el-icon-edit" v-if="ownBlog">
-        <router-link :to="{name: 'BlogEdit', params: {blogId: blog.id}}" >
+        <router-link :to="{name: 'BlogEdit', params: {blogId: blog.id}}" style="color: #fff; text-decoration: none; font-size: 20px">
         编辑
         </router-link>
       </el-link>
@@ -54,7 +54,12 @@
     }
   }
 </script>
-
+<style>
+		.markdown-body{
+			position: relative;
+			height: 100%;
+		}
+</style>
 <style scoped>
   .mblog {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -62,5 +67,7 @@
     min-height: 700px;
     padding: 20px 15px;
   }
-
+	.markdown-body{
+		height: 100%;
+	}
 </style>

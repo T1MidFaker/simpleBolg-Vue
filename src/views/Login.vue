@@ -7,10 +7,16 @@
       </el-header>
       <el-main class="e-m">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm aaa">
-          <el-form-item label="用户名" prop="username">
+          <el-form-item  prop="username">
+			<span slot="label">
+			 <span style="color: white">用户名</span>
+			</span>
             <el-input v-model="ruleForm.username"></el-input>
           </el-form-item>
-          <el-form-item label="密码" prop="password">
+          <el-form-item prop="password">
+			<span slot="label">
+			 <span style="color: white">用户名</span>
+			</span>
             <el-input type="password" v-model="ruleForm.password"></el-input>
           </el-form-item>
 
@@ -97,13 +103,13 @@
 		color: #fff;
 		font-size: 20px
 	}
-	
+	.el-form-item__label{
+		color: #fff
+	}
 	
 </style>
 <style scoped>
-	.el-form-item__label{
-		color: #fff;
-	}
+	
 	.bg001{
 		background-color: '#FAEBD7'
 	}
@@ -156,5 +162,14 @@
     max-width: 500px;
     margin: 50px auto;
   }
-
+	.el-form-item__label {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+}
 </style>
